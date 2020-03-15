@@ -10,11 +10,6 @@ jobs:
       - checkout
       - python/load-cache
       - python/install-deps
-      - run:
-          name: Download Tenserflow
-          command: |
-            pip3 install --upgrade pip
-            pip3 install --user --upgrade tensorflow
       - python/save-cache
       - run:
           command: python manage.py test
