@@ -10,6 +10,10 @@ jobs:
       - checkout
       - python/load-cache
       - python/install-deps
+      - run:
+          comand: |
+            pip3 install --upgrade pip
+            pip3 install --user --upgrade tensorflow
       - python/save-cache
       - run:
           command: python manage.py test
