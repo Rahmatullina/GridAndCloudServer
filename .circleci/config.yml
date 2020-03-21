@@ -1,6 +1,8 @@
 version: 2.1
 orbs:
    heroku: circleci/heroku@1.0.1 # Use the Heroku orb in your config
+   python: circleci/python@0.2.1
+
 jobs:
   build:
     working_directory: ~/GridAndCloudServer
