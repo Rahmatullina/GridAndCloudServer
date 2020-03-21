@@ -20,8 +20,8 @@ jobs:
       - python/save-cache
       - run:
           name: Test
-          command: python manage.py test 
- workflows:
+          command: python manage.py test
+workflows:
    heroku_deploy:
      jobs:
        - build
